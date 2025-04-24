@@ -1,0 +1,288 @@
+body {
+    background-color: black;
+    color: white;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url('https://www.transparenttextures.com/patterns/green-dust-and-scratches.png'); /* textura suave */
+    background-repeat: repeat;
+}
+
+.main-title {
+    font-size: 62px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 46px 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(130, 151, 130);
+}
+
+.header__logo {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-left: 16px;  
+    letter-spacing: 2px;
+}
+
+.header__nav ul {
+    display: flex;
+    gap: 16px;
+    margin-right: 16px;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: white;
+    padding: 14px;
+    border-radius: 6px;
+}
+
+.header__nav a:hover {
+    background-color: rgb(185, 233, 14);
+    transition: background-color 0.5 ease;
+}
+
+.header__nav .header__nav--active {
+    color: black;
+}
+
+.header__nav--active {
+    background-color: rgb(185, 233, 14);
+    cursor: default;
+}
+.header__logo--img {
+    width: 50px;
+    height: 50px;
+    margin-left: 16px;
+}
+
+.pricing {
+    display: flex;
+    gap: 16px;
+}
+
+.pricing-plan {
+    flex: 1;
+    background:rgb(130, 151, 130);
+    padding: 16px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px  white;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-plan__title {
+    border-bottom: 2px solid rgb(185, 233, 14);
+    font-size: 24px;
+    margin-top: 0;
+    text-align: center;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.pricing-plan p {
+    margin-top: 0;
+}
+
+.pricing-plan__price {
+    font-size: 26px;
+    text-align: center;
+    margin: 16px 0;
+    padding-left: 45px;
+}
+
+
+.pricing-plan__features {
+    list-style-type: none;
+    color: #f1eeee;
+    margin: 0 0 35px 0;
+    padding-left: 16px;
+    line-height: 1.8;
+    flex-grow: 1;
+}
+
+.pricing-plan__cta {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(185, 233, 14);
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 10px;
+    text-align: center;
+}
+
+.pricing-plan__cta:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s ease;
+}
+
+.content-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 16px 0;
+    padding: 16px;
+    background-color: rgb(130, 151, 130);
+    border-radius: 6px;
+    box-shadow: 0 5px 15px white;
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.post__title {
+    font-size: 34px;
+    margin: 0 0 16px 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.post__img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.post{
+    margin: 0;
+    padding: 0 16px;
+}
+
+.post__content {
+    margin: 10px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.post__link {
+    background-color: rgb(185, 233, 14);
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.post__link:hover {
+    text-decoration: underline;
+    transition: text-decoration 0.5s ease;
+    background-color: white;
+    border: 2px solid rgb(185, 233, 14);
+    color: black;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 16px 0;
+    padding: 16px;
+    background-color: rgb(130, 151, 130);
+    border-radius: 6px;
+    box-shadow: 0 5px 15px white;
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.questions__title {
+    font-size: 34px;
+    margin: 0 0 16px 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid rgb(255, 255, 254);
+}
+
+.questions__text {
+    margin: 10px;
+    padding: 0;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.questions__item {
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(185, 211, 185);
+    border-radius: 10px;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 16px 0;
+    padding: 16px;
+    background-color: rgb(130, 151, 130);
+    border-radius: 6px;
+    box-shadow: 0 5px 15px white;
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contato__input {
+    width: 98%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid rgb(185, 233, 14);
+    background-color: white;
+    color: black;
+}
+
+.contato__input:focus {
+    outline: none;
+    border-color: rgb(185, 233, 14);
+}
+
+.contato__button {
+    background-color: rgb(185, 233, 14);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contato__button:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s ease;
+}
+
+.contato__reponse {
+    margin: 10px;
+    padding: 0;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    background-color: rgb(185, 233, 14);
+    border-radius: 6px;
+}
