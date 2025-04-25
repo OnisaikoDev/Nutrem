@@ -21,6 +21,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(130, 151, 130);
+    position: fixed;
 }
 
 .header__logo {
